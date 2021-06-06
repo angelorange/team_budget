@@ -45,7 +45,12 @@ defmodule TeamBudget.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
+      {:distillery, "~> 2.1", runtime: false},
+      {:absinthe, "~> 1.5.0", override: true},
+      {:absinthe_error_payload, "~> 1.0"},
+      {:absinthe_phoenix, "~> 2.0"},
+      {:absinthe_plug, "~> 1.5"},
     ]
   end
 
